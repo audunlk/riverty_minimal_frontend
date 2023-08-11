@@ -25,7 +25,6 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {/* create input channels that takes EUR or USD ex and a button that converts their values */}
       <div className="flex flex-col items-center justify-center">
         <h1 className="text-5xl font-bold mb-10">Currency Converter</h1>
         <div className="flex flex-col items-center justify-center gap-4 padding-4">
@@ -58,7 +57,7 @@ export default function Home() {
           </label>
           <button 
           onClick={convert}
-          className="bg-gray-200 px-4 py-2 rounded-r hover:bg-gray-300 focus:outline-none">
+          className="bg-blue-200 px-4 py-2 rounded-r hover:bg-gray-300 focus:outline-none">
             {loading ? 'Loading...' : 'Convert'}
           </button>
           <p className="text-2xl font-bold mt-4">{messageString}</p>
